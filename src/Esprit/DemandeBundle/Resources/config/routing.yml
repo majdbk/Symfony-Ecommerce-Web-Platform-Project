@@ -1,0 +1,84 @@
+esprit_demande_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: EspritDemandeBundle:Default:index }
+liste_demande:
+    path:     /list
+    defaults: { _controller: EspritDemandeBundle:Demande:list }
+liste_demande_personnel:
+    path:     /list2
+    defaults: { _controller: EspritDemandeBundle:Demande:list2 } 
+liste_demande_a_traiter:
+    path:     /traiter
+    defaults: { _controller: EspritDemandeBundle:Demande:traiter } 
+accepter_demande:
+    path:     /accepter/{id}
+    defaults: { _controller: EspritDemandeBundle:Demande:accepter } 
+refuser_demande:
+    path:     /refuser/{id}
+    defaults: { _controller: EspritDemandeBundle:Demande:refuser }
+ajouter_demande:
+    path:     /ajouter
+    defaults: { _controller: EspritDemandeBundle:Demande:ajouter }
+ajouter2_demande:
+    path:     /ajouter2
+    defaults: { _controller: EspritDemandeBundle:Demande:ajouter2 }    
+update_demande:
+    path:     /update/{id}
+    defaults: { _controller: EspritDemandeBundle:Demande:update }
+contacter_demande:
+    path:     /contacter/{idUser}
+    defaults: { _controller: EspritDemandeBundle:Demande:contacter }
+voir_profil:
+    path:     /profil/{idUser}
+    defaults: { _controller: EspritDemandeBundle:Demande:contacter2 }    
+supprimer_demande:
+    path:     /supprimer/{id}
+    defaults: { _controller: EspritDemandeBundle:Demande:supprimer }
+acceuil_demande:
+    path:     /acceuil
+    defaults: { _controller: EspritDemandeBundle:Demande:acceuil }
+acceuil2_demande:
+    path:     /acceuilAdmin
+    defaults: { _controller: EspritDemandeBundle:Demande:acceuil2 } 
+_graphePie:
+    path:     /pie
+    defaults: { _controller: EspritDemandeBundle:Graphe:chartPie } 
+_graphePie2:
+    path:     /pie2
+    defaults: { _controller: EspritDemandeBundle:Graphe:chartPie2 }
+_graphePie3:
+    path:     /pie3
+    defaults: { _controller: EspritDemandeBundle:Graphe:chartPie3 }
+_graphePie4:
+    path:     /pie4
+    defaults: { _controller: EspritDemandeBundle:Graphe:chartPie4 }
+_graphePie5:
+    path:     /pie5
+    defaults: { _controller: EspritDemandeBundle:Graphe:chartPie5 }    
+forum:
+    path:     /forum
+    defaults: { _controller: EspritDemandeBundle:Demande:listForum }
+forum_ajout:
+    path:     /AjoutForum
+    defaults: { _controller: EspritDemandeBundle:Demande:ajouterForum } 
+commentaire_forum:
+    path:     /commentaire/{idForumComm}
+    defaults: { _controller: EspritDemandeBundle:Demande:listCommentaire } 
+commentaire_ajout:
+    path:     /AjoutCommentaire/{idForumComm2}
+    defaults: { _controller: EspritDemandeBundle:Demande:ajouterComm }
+reclamation_forum:
+    path:     /AjoutReclamation{idForum}
+    defaults: { _controller: EspritDemandeBundle:Demande:ajouterReclamation }
+traitement_forum:
+    path:     /traiterforum
+    defaults: { _controller: EspritDemandeBundle:Demande:traiterForum }
+accepter_forum:
+    path:     /accepterforum/{idForum}
+    defaults: { _controller: EspritDemandeBundle:Demande:accepterForum } 
+refuser_forum:
+    path:     /refuserforum/{idForum}
+    defaults: { _controller: EspritDemandeBundle:Demande:refuserForum }  
+traitement_reclamation:
+    path:     /traiterreclamation
+    defaults: { _controller: EspritDemandeBundle:Demande:listReclamation }    
